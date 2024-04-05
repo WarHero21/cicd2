@@ -26,10 +26,8 @@ jobs:
 
       - name: Start Docker
         run: |
-          # Start Docker.app if not already running
           if ! pgrep -f Docker.app; then
             open -a /Applications/Docker.app
-            # Wait for Docker to be ready
             while ! docker info >/dev/null 2>&1; do sleep 1; done
           fi
 
