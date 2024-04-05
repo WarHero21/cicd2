@@ -8,7 +8,7 @@ def health():
 
 @app.route("/")
 def hello_world():
-    return "Hello, World!! Changed this a litte bit :)"
+    return "Hello megegyszer! :)"
  
 if __name__ == '__main__':  
    app.run(host="0.0.0.0", port=5000)
